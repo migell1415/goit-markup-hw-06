@@ -52,9 +52,91 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-menu-btn">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- ===============MOBILE================== -->
+      <!-- is-open -->
+      <div class="mob-menu">
+        <div class="mob-container">
+          <button type="button" class="modal-close-btn">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mob-menu-navigation">
+            <ul class="mob-menu-nav-list">
+              <li>
+                <a class="mob-menu-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu-nav-link" href="" target="_blank"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu-nav-link" href="" target="_blank"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-menu-address">
+            <ul class="mob-menu-address-list">
+              <li>
+                <a
+                  class="mob-menu-contacts mob-current"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="mob-menu-contacts" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="team-cards-social">
+            <li class="team-cards-social-item">
+              <a href="./index.html" target="_blank" class="team-icons-link">
+                <svg class="team-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-cards-social-item">
+              <a href="./index.html" target="_blank" class="team-icons-link">
+                <svg class="team-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-cards-social-item">
+              <a href="./index.html" target="_blank" class="team-icons-link">
+                <svg class="team-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-cards-social-item">
+              <a href="./index.html" target="_blank" class="team-icons-link">
+                <svg class="team-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
-    <!-- main-content -->
+    <!-- ===============main-content=================== -->
     <main>
       <section class="section-first">
         <div class="container">
@@ -62,7 +144,7 @@
           <button type="button" class="button">Order Service</button>
         </div>
       </section>
-      <!-- FEATURES -->
+      <!-- ============================FEATURES============================ -->
       <section class="section-features">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -121,7 +203,7 @@
           </ul>
         </div>
       </section>
-      <!-- TEAM -->
+      <!-- ===========================TEAM=============================== -->
       <section class="section-team">
         <div class="container">
           <h2 class="title-sections">Our Team</h2>
@@ -354,7 +436,8 @@
           </ul>
         </div>
       </section>
-      <!-- OUR TEAM -->
+
+      <!-- =======================OUR TEAM======================= -->
       <section class="section-our-team">
         <div class="container">
           <h2 class="title-sections">Our Portfolio</h2>
@@ -477,11 +560,11 @@
         </div>
       </section>
     </main>
-
+    <!-- ====================================FOOTER=============================== -->
     <footer class="footer-section">
       <div class="container footer-container">
         <div class="logo-footer-group">
-          <a class="logo-footer" href="./index.html">
+          <a class="logo logo-footer" href="./index.html">
             Web<span class="logo-studio-footer">Studio</span>
           </a>
           <p class="footer-text">
@@ -524,29 +607,33 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <p class="footer-social-media">Subscribe</p>
+          <p class="footer-title footer-social-media">Subscribe</p>
           <form class="footer-form">
-            <label class="footer-email-label">
-              <input
-                type="email"
-                name="footer-email"
-                id="footer-email"
-                class="footer-email-input"
-                placeholder="E-mail"
-              />
-            </label>
-            <button type="submit" class="footer-subscribe-btn">
-              Subscribe
-              <svg class="footer-subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="footer-form-container">
+              <label class="footer-email-label">
+                <input
+                  type="email"
+                  name="footer-email"
+                  id="footer-email"
+                  class="footer-email-input"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button type="submit" class="footer-subscribe-btn">
+                Subscribe
+                <svg class="footer-subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
+    <!-- =========================BACKDROP=========================== -->
+
     <!-- is-open -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -620,8 +707,10 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the &#160;
-              <a href="" class="modal-link">Privacy Policy</a></label
+              <span
+                >I accept the terms and conditions of the
+                <a href="" class="modal-link">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button type="submit" class="modal-btn">Send</button>
